@@ -9,13 +9,20 @@ IO流用来处理设备之间的数据传输。Java对数据的操作是通过`�
 
 # 常用基类
 
-**字节流**
+**字节流\(java.io.OutputStream,java.io.InputStream\)**
 
 * `public abstract class OutputStream extends Object implements Closeable,Flushable`** **
 * `public abstract class InputStream extends Object implements Closeable`** **
 
-字符流
+**字符流\(java.io.Writer,java.io.reader\)**
 
-* 
+* `public abstract class Writerextends Objectimplements Appendable, Closeable, Flushable  `
+
+* public abstract class Readerextends Objectimplements Readable, Closeable` `
+
+
+
+
+
 
 
