@@ -60,7 +60,31 @@ fos.close();
 * 写数据
 * 释放资源
 
-### 三个
+### 三个Write\(\)方法
+
+* public void write\(int b\)写一个字节
+* public void write\(byte\[\] b\)写一个字节数组
+* public void write\(byte\[\] b, int off, int len\)写一个字节数组的一部分
+
+```java
+FileOutputStream fos = new FileOutputStream("a.txt");
+fos.write(97);//文件打开后显示字符a
+fos.close();
+```
+
+```java
+FileOutputStream fos = new FileOutputSteam("a.txt", true);//追加输入
+fos.write("hello".getBytes());
+fos.write({97,98,99});
+fos.close();
+```
+
+```java
+FileOutputStream fos = new FileOutputStream("a.txt", true);
+byte[] bytes = {97,98,99,100};
+fos.write(byte,0,3);
+fos.close();
+```
 
 
 
