@@ -136,5 +136,9 @@ public class FileTest {
 
 ### 三个read\(\)方法
 
+* `int read()` 一次读一个字节，返回-1为文件末尾
+* `int read(byte[] b)` 一次读取一个字节数组，返回本次读入的字节数
+* `int read(byte[] b, int off, int len)` 一次读取一个字节数组，指定起始和结束索引。
+
 
 
