@@ -128,7 +128,5 @@ public class FileTest {
 
 `FileInputStream` 用于读取诸如图像数据之类的原始字节流。
 
-捕捉
-
-
+步骤
 
