@@ -128,5 +128,13 @@ public class FileTest {
 
 `FileInputStream` 用于读取诸如图像数据之类的原始字节流。
 
-步骤
+步骤：
+
+* 创建字节输入流对象
+* 调用`read()` 方法读取数据
+* 释放资源
+
+### 三个
+
+
 
