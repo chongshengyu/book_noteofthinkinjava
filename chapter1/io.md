@@ -11,10 +11,10 @@ IO流用来处理设备之间的数据传输。Java对数据的操作是通过`�
 
 **字节流**
 
-* **`public abstract class OutputStream extends Object implements Closeable,Flushable` **
-* **`public abstract class InputStream extends Object implements Closeable` **
+* `public abstract class OutputStream extends Object implements Closeable,Flushable`** **
+* `public abstract class InputStream extends Object implements Closeable`** **
 
-\*\*字符流\*\*
+字符流
 
 * 
 
