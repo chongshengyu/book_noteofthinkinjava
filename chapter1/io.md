@@ -18,9 +18,9 @@ IO流用来处理设备之间的数据传输。Java对数据的操作是通过`�
 
 * `public abstract class Writerextends Objectimplements Appendable, Closeable, Flushable`
 
-* `public abstract class Readerextends Objectimplements Readable, Closeable` 
+* `public abstract class Readerextends Objectimplements Readable, Closeable`
 
-# cha
+# 常用 
 
 
 
