@@ -29,8 +29,8 @@ public boolean createNewFile()//当且仅当不存在具有此抽象路径名指
 public boolean mkdir()//创建抽象路径名指定的目录
 public boolean mkdirs()//创建抽象路径名指定的目录，包括所有必需但不存在的父目录
 public String getAbsolutePath()
-public String getPath()
-public String getName()
+public String getPath()//将此抽象路径名转换为一个路径名字符串
+public String getName()//返回由此抽象路径名表示的文件或目录的名称
 public long length()
 public long lastModified()
 public String[] list()
