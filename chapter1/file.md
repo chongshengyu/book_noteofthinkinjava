@@ -10,7 +10,7 @@
 
 `File(Fille parent, String child)` 使用父File对象和一个子文件（或目录）构造File对象
 
-`File(URI uri)` 
+`File(URI uri)`
 
 注意：若创建目录或文件时，没有写明绝对路径，则默认放在项目根目录下。
 
@@ -25,6 +25,8 @@ public boolean exists()
 public boolean canRead()
 public boolean canWrite()
 public boolean isHidden()
+public boolean mkdir()//创建抽象路径名指定的目录
+public boolean mkdirs()//创建抽象路径名指定的目录，包括所有必需但不存在的父目录
 public String getAbsolutePath()
 public String getPath()
 public String getName()
