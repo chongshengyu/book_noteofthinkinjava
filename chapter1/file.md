@@ -31,7 +31,7 @@ public boolean mkdirs()//创建抽象路径名指定的目录，包括所有必�
 public String getAbsolutePath()
 public String getPath()//将此抽象路径名转换为一个路径名字符串
 public String getName()//返回由此抽象路径名表示的文件或目录的名称
-public long length()
+public long length()//以字节为单位
 public long lastModified()
 public String[] list()
 public File[] listFiles()
