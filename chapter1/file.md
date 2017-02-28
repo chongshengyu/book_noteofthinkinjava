@@ -52,49 +52,49 @@ public File[] listFiles(FilenameFilter filter)
  *
  */
 public class FileTest {
-	public static void main(String[] args){
-		File file = new File("E:/test/test/testfile");
-		file.mkdirs();//要先创建目录，在创建文件
-		File file1 = new File("E:/test/a.jpg");
-		File file2 = new File("E:/test/test/testfile/b.jpg");
-		File file3 = new File("E:/test/test/testfile/c.jpg");
-		File file4 = new File("E:/test/test/testfile/d.tmp");
-		
-		try {
-			file1.createNewFile();
-			file2.createNewFile();
-			file3.createNewFile();
-			file4.createNewFile();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		setSuffix(new File("E:/test"),"jpg","jpeg");
-	}
-	public static void setSuffix(File file, final String src, final String dest){
-		
-		File[] jpgFiles = file.listFiles(new FilenameFilter() {
-			@Override
-			public boolean accept(File dir, String name) {
-				File fileTmp = new File(dir,name);
-				if(fileTmp.isDirectory()){
-					setSuffix(fileTmp,"jpg","jpeg");
-				}else{
-					if(name.split("\\.")[1].equals(src)){
-						return true;
-					}
-				}
-				return false;
-			}
-		});
-		for(File f:jpgFiles){
-			f.renameTo(new File(file.getPath(),f.getName().split("\\.")[0]+"."+dest));//修改后缀名
-		}
-	}
+    public static void main(String[] args){
+        File file = new File("E:/test/test/testfile");
+        file.mkdirs();//要先创建目录，在创建文件
+        File file1 = new File("E:/test/a.jpg");
+        File file2 = new File("E:/test/test/testfile/b.jpg");
+        File file3 = new File("E:/test/test/testfile/c.jpg");
+        File file4 = new File("E:/test/test/testfile/d.tmp");
+
+        try {
+            file1.createNewFile();
+            file2.createNewFile();
+            file3.createNewFile();
+            file4.createNewFile();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        setSuffix(new File("E:/test"),"jpg","jpeg");
+    }
+    public static void setSuffix(File file, final String src, final String dest){
+
+        File[] jpgFiles = file.listFiles(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                File fileTmp = new File(dir,name);
+                if(fileTmp.isDirectory()){
+                    setSuffix(fileTmp,"jpg","jpeg");
+                }else{
+                    if(name.split("\\.")[1].equals(src)){
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
+        for(File f:jpgFiles){
+            f.renameTo(new File(file.getPath(),f.getName().split("\\.")[0]+"."+dest));//修改后缀名
+        }
+    }
 }
 ```
 
-
+# IO 
 
 
 
