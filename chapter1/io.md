@@ -31,8 +31,8 @@ FileOutputStream用于写入诸如图像之类的原始的字节流。
 ### 构造方法
 
 ```java
-FileOutputStream(File file) 
-FileOutputStream(String name)
+FileOutputStream(File file, boolean append) 
+FileOutputStream(String name, boolean append)
 ```
 
 
