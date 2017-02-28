@@ -86,5 +86,43 @@ fos.write(byte,0,3);
 fos.close();
 ```
 
+**如何实现换行？**
+
+`fos.write("\r\n".getBytes());` windows系统换行为`\r\n` ，Linux系统为`\n` 。
+
+**Demo**
+
+```java
+/**
+ * 创建文件，并用字节流写入字符
+ * @author YCS
+ *
+ */
+public class FileTest {
+	public static void main(String[] args){
+		File file = new File("E:/test");
+		file.mkdirs();
+		File txtFile = new File(file,"a.txt");
+		FileOutputStream fos = null;
+		try {
+			fos = new FileOutputStream(txtFile);
+			fos.write("hello\r\nworld".getBytes());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally{
+			if(fos != null){//fos有可能还没创建出来，比如文件不存在时。
+				try {
+					fos.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}
+```
+
 
 
