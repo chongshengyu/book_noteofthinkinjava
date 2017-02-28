@@ -18,7 +18,7 @@
 
 ```java
 public boolean delete()//彻底删除，不放回收站；只能从底层开始删除，不能级联删除
-public boolean renameTo()
+public boolean renameTo(File dest)
 public boolean isDirectory()
 public boolean isFile()
 public boolean exists()
