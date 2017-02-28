@@ -25,6 +25,7 @@ public boolean exists()
 public boolean canRead()
 public boolean canWrite()
 public boolean isHidden()
+public boolean createNewFile()//当且仅当不存在具有此抽象路径名指定名称的文件时，不可分地创建一个新的空文件。
 public boolean mkdir()//创建抽象路径名指定的目录
 public boolean mkdirs()//创建抽象路径名指定的目录，包括所有必需但不存在的父目录
 public String getAbsolutePath()
