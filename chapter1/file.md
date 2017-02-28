@@ -10,6 +10,8 @@
 
 `File(Fille parent, String child)` 使用父File对象和一个子文件（或目录）构造File对象
 
+`File(URI uri)` 
+
 注意：若创建目录或文件时，没有写明绝对路径，则默认放在项目根目录下。
 
 ## 常用API
