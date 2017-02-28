@@ -20,7 +20,7 @@ IO流用来处理设备之间的数据传输。Java对数据的操作是通过`�
 
 * `public abstract class Readerextends Objectimplements Readable, Closeable`
 
-# 常用 
+# 常用类
 
 
 
