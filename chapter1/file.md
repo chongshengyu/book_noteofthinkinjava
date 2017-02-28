@@ -4,5 +4,13 @@
 
 ## 构造方法
 
+`File(String pathName)` 根据路径构造File对象
+
+`File(String paraent, String child)` 根据一个目录和一个子目录（或文件）构造File对象
+
+`File(Fille parent, String child)` 使用父File对象和一个子文件（或目录）构造File对象
+
+注意
+
 
 
