@@ -22,5 +22,13 @@ IO流用来处理设备之间的数据传输。Java对数据的操作是通过`�
 
 # 常用类
 
+## FileOutputStream
+
+`public class FileOutputStream extends OutputStream` 
+
+FileOutputStream用于写入诸如图像之类的原始的字节流。
+
+### 构造
+
 
 
