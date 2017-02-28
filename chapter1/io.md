@@ -60,7 +60,7 @@ fos.close();
 * 写数据
 * 释放资源
 
-### 三个Write\(\)方法
+### 三个write\(\)方法
 
 * public void write\(int b\)写一个字节
 * public void write\(byte\[\] b\)写一个字节数组
@@ -134,7 +134,7 @@ public class FileTest {
 * 调用`read()` 方法读取数据
 * 释放资源
 
-### 三个
+### 三个read\(\)方法
 
 
 
