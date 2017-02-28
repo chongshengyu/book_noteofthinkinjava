@@ -30,11 +30,17 @@ public long length()
 public long lastModified()
 public String[] list()
 public File[] listFiles()
+public String[] list(FilenameFilter filter)
+public File[] listFiles(FilenameFilter filter)
 ```
 
 **Tips**
 
 * 截取文件名时，`File.getName().split("\.")[0]` 点号前面要加转义
+
+## Demo
+
+
 
 
 
