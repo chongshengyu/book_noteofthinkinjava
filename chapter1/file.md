@@ -34,7 +34,7 @@ public File[] listFiles()
 
 **Tips**
 
-* 截取文件
+* 截取文件名时，`File.getName().split("\.")[0]` 点号前面要加转义
 
 
 
