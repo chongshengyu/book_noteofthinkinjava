@@ -12,7 +12,29 @@
 
 注意：若创建目录或文件时，没有写明绝对路径，则默认放在项目根目录下。
 
-## 常用
+## 常用API
+
+```java
+public boolean delete()//彻底删除，不放回收站；只能从底层开始删除，不能级联删除
+public boolean renameTo()
+public boolean isDirectory()
+public boolean isFile()
+public boolean exists()
+public boolean canRead()
+public boolean canWrite()
+public boolean isHidden()
+public String getAbsolutePath()
+public String getPath()
+public String getName()
+public long length()
+public long lastModified()
+public String[] list()
+public File[] listFiles()
+```
+
+**Tips**
+
+* 截取文件
 
 
 
