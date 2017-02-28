@@ -41,7 +41,20 @@ FileOutputStream(String name, boolean append)
 * 创建FileOutputStream对象
 * 把FileOutputStream对象指向刚创建的文件
 
-### 文件
+### 文件写入
+
+```java
+FileOutputStream fos = new FileOutputStream("e:a.txt");
+fos.write("hello,world".getBytes());
+fos.close();
+```
+
+**为什么要close\(\)**
+
+* 让流对象关闭，变成垃圾
+* 通知系统释放与该文件相关的资源
+
+### zijie
 
 
 
