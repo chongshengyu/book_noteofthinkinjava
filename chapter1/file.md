@@ -2,7 +2,7 @@
 
 位于`Java.io.File` ,`public class File extends Object implements Serializable,Comparable` ,File是文件和路径名的抽象表示形式（未必真实存在）
 
-## 构造方法
+# 构造方法
 
 `File(String pathName)` 根据路径构造File对象
 
@@ -14,7 +14,7 @@
 
 注意：若创建目录或文件时，没有写明绝对路径，则默认放在项目根目录下。
 
-## 常用API
+# 常用API
 
 ```java
 public boolean delete()//彻底删除，不放回收站；只能从底层开始删除，不能级联删除
@@ -43,7 +43,7 @@ public File[] listFiles(FilenameFilter filter)
 
 * 截取文件名时，`File.getName().split("\\.")[0]` 点号前面要加下划线
 
-## Demo
+# Demo
 
 ```java
 /**
