@@ -35,5 +35,13 @@ FileOutputStream(File file, boolean append)
 FileOutputStream(String name, boolean append)
 ```
 
-在
+在执行完`FileOutputStream fos = new FileOutputStream("a.txt");` 后，就会创建出`a.txt` 文件，期间发生了这些事情：
+
+* 调用操作系统功能创建文件
+* 创建FileOutputStream对象
+* 把FileOutputStream对象指向刚创建的文件
+
+### 文件
+
+
 
