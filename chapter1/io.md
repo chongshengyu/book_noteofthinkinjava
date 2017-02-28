@@ -99,30 +99,36 @@ fos.close();
  *
  */
 public class FileTest {
-	public static void main(String[] args){
-		File file = new File("E:/test");
-		file.mkdirs();
-		File txtFile = new File(file,"a.txt");
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream(txtFile);
-			fos.write("hello\r\nworld".getBytes());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}finally{
-			if(fos != null){//fos有可能还没创建出来，比如文件不存在时。
-				try {
-					fos.close();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		}
-	}
+    public static void main(String[] args){
+        File file = new File("E:/test");
+        file.mkdirs();
+        File txtFile = new File(file,"a.txt");
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(txtFile);
+            fos.write("hello\r\nworld".getBytes());
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }finally{
+            if(fos != null){//fos有可能还没创建出来，比如文件不存在时。
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }
 ```
+
+## FileInputStream
+
+`FileInputStream` 用于读取诸如图像数据之类的原始字节流。
+
+捕捉
 
 
 
