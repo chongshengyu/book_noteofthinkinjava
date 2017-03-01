@@ -232,7 +232,17 @@ bos.close();//关闭这个即可
 
 ### 字节流复制文件的四种方法:
 
-基本
+基本字节流一次读写一个字节； 
 
-运行时间比较：long time = System.cuttentTimeMillis\(\);
+基本字节流一次读写一个字节数组； 
+
+高效字节流一次读写一个字节； 
+
+高效字节流一次读写一个字节数组。
+
+**Tips**
+
+* 运行时间比较：long time = System.cuttentTimeMillis\(\);
+
+
 
