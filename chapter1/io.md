@@ -210,7 +210,27 @@ System.out.println(Arrays.toString(bytes));
 
 字节流一次读写一个数组比一次读写一个字节快很多，这是加入数组这种缓冲区的效果**（装饰设计模式）** ，java还提供了字节缓冲区流。`BufferedOutputStream` ,`BufferedInputStream` 。
 
-### BufferedOutputStream
+### BufferedOutputStream构造方法
 
+* `BufferedOutputStream(OutputStream)` 创建一个新的缓冲输出流，以将数据写入指定的底层输出流
+* `BufferedOutputStream(OutputStream out, int size)` 指定缓冲区大小
 
+为什么不传一个具体的文件，而是一个OutputStream对象？
+
+字节缓冲区流仅仅提供缓冲区，为高效而设计。真正的读写操作，还要靠基本的流对象实现。
+
+```java
+BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("e:\\TestData\\b.txt"));
+bos.write("hello".getBytes());
+bos.close();//关闭这个即可
+```
+
+### BufferedInputStream构造方法
+
+* `BufferedInputStream(InputStream in)` 
+* `BufferedInputStream(InputStream in, int size)` 
+
+### 字节
+
+运行时间比较：long time = System.cuttentTimeMillis\(\);
 
