@@ -149,49 +149,49 @@ public class FileTest {
  *
  */
 public class FileTest {
-	public static void main(String[] args){
-		File src = new File("E:/test");
-		File dest = new File("E:/test/tohere");
-		copy(new File(src,"test.png"),new File(dest,"test2.png"));
-		System.out.println("done");
-	}
-	
-	public static void copy(File src, File dest){
-		FileInputStream fis = null;
-		FileOutputStream fos = null;
-		try {
-			fis = new FileInputStream(src);
-			fos = new FileOutputStream(dest);
-			byte[] buffer = new byte[2014];
-			int length = 0;
-			while((length = fis.read(buffer)) != -1){
-				fos.write(buffer, 0, length);
-			}
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally{
-			if(fos != null){
-				try {
-					fos.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-			if(fis != null){
-				try {
-					fis.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	}
+    public static void main(String[] args){
+        File src = new File("E:/test");
+        File dest = new File("E:/test/tohere");
+        copy(new File(src,"test.png"),new File(dest,"test2.png"));
+        System.out.println("done");
+    }
+
+    public static void copy(File src, File dest){
+        FileInputStream fis = null;
+        FileOutputStream fos = null;
+        try {
+            fis = new FileInputStream(src);
+            fos = new FileOutputStream(dest);
+            byte[] buffer = new byte[2014];
+            int length = 0;
+            while((length = fis.read(buffer)) != -1){
+                fos.write(buffer, 0, length);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally{
+            if(fos != null){
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if(fis != null){
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }
 ```
 
+**Tips**
 
-
-
+计算机
 
