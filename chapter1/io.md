@@ -230,7 +230,9 @@ bos.close();//关闭这个即可
 * `BufferedInputStream(InputStream in)` 
 * `BufferedInputStream(InputStream in, int size)` 
 
-### 字节
+### 字节流复制文件的四种方法:
+
+基本
 
 运行时间比较：long time = System.cuttentTimeMillis\(\);
 
