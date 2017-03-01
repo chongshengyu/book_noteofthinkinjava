@@ -195,5 +195,14 @@ public class FileTest {
 
 计算机怎么识别中文字符？
 
+```java
+String s = "ab哈哈cd";
+byte[] bytes = s.getBytes();
+System.out.println(Arrays.toString(bytes));
+//[97, 98, -27, -109, -120, -27, -109, -120, 99, 100]
+```
+
+
+
 
 
