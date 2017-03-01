@@ -208,7 +208,9 @@ System.out.println(Arrays.toString(bytes));
 
 ## 字节缓冲流
 
-字节
+字节流一次读写一个数组比一次读写一个字节快很多，这是加入数组这种缓冲区的效果**（装饰设计模式）** ，java还提供了字节缓冲区流。`BufferedOutputStream` ,`BufferedInputStream` 。
+
+### BufferedOutputStream
 
 
 
