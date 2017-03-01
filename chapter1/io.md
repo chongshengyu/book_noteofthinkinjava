@@ -204,3 +204,9 @@ System.out.println(Arrays.toString(bytes));
 
 中文字符的字节码的第一个字节是负的，把负的2个\(unicode\)或3个\(utf8\)拼一块得到中文字符。示例中使用utf8。
 
+**\r 和\n 各占一个字符** 
+
+## 字节
+
+
+
